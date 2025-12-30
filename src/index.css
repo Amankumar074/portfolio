@@ -1,0 +1,32 @@
+.profile-glow {
+  width: 300px;
+  height: 300px;
+  border-radius: 24px;
+  position: relative;
+  box-shadow: 0 0 80px rgba(13,110,253,.6);
+  animation: float 6s ease-in-out infinite;
+}
+
+.profile-glow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.project-card {
+  background: linear-gradient(145deg,#020617,#0f172a);
+  border-radius: 18px;
+  transition: all .4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0,0,0,.8);
+}
